@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacts | ZYRA</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- HEADER -->
+  <header>
+    <a class="logo" href="index.html">ZYRA</a>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="contact.html">Contact</a>
+      <a href="login.html" class="btn-login">Login</a>
+    </nav>
+  </header>
+
+  <!-- CONTACT HERO -->
+  <section class="hero">
+    <h1>Get in Touch with ZYRA</h1>
+    <p>Questions? Suggestions? We’re here to help.</p>
+  </section>
+
+  <!-- CONTACT FORM -->
+  <section class="contact-container">
+    <form class="contact-form" action="http://zyra.csf.syssec.dpss.inesc-id.pt/login" method="post" onsubmit="showError()">
+      <h2>Contact Us</h2>
+      <div class="input-group">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" placeholder="Your name" required>
+      </div>
+      <div class="input-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="Your email" required>
+      </div>
+      <div class="input-group">
+        <label for="message">Message</label>
+        <textarea id="message" name="message" placeholder="Your message..." rows="5" required></textarea>
+      </div>
+      <button type="submit" class="btn">Send Message</button>
+    </form>
+
+    <!-- OPTIONAL CONTACT INFO -->
+    <div class="contact-info">
+      <h3>Other Ways to Reach Us</h3>
+      <p>Email: <a href="mailto:support@memel.com">support@memel.com</a></p>
+      <p>Phone: +351 912 345 678</p>
+      <p>Address: MEMEL HQ, Lisbon, Portugal</p>
+    </div>
+  </section>
+
+  <!-- GENERIC ERROR POPUP -->
+<div id="error-popup" class="popup hidden">
+  <div class="popup-content">
+    <span id="close-popup" class="close">&times;</span>
+    <h2>Error</h2>
+    <p id="error-message">Something went wrong. Please try again.</p>
+  </div>
+</div>
+
+<script>
+  const errorPopup = document.getElementById("error-popup");
+  const closePopup = document.getElementById("close-popup");
+  const errorMessage = document.getElementById("error-message");
+
+  // Function to show popup with a custom message
+  function showError(message = "Something went wrong. Please try again.") {
+    errorMessage.textContent = message;
+    errorPopup.classList.remove("hidden");
+  }
+
+  // Close button
+  closePopup.addEventListener("click", () => {
+    errorPopup.classList.add("hidden");
+  });
+
+  // Optional: click outside the popup to close
+  errorPopup.addEventListener("click", (e) => {
+    if (e.target === errorPopup) {
+      errorPopup.classList.add("hidden");
+    }
+  });
+</script>
+
+</body>
+</html>

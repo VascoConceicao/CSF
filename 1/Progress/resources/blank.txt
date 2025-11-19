@@ -1,0 +1,33 @@
+File:
+blank (inside myzip)
+
+
+**Verificar o tipo do arquivo (Mostra que o 'blank' é apenas 'data')**
+Run:
+file blank
+
+
+**Visualizar os primeiros bytes do arquivo ( O cabeçalho mostra '%PNG-1.4', indicando que o arquivo começa como PNG)**
+Run:
+hexdump -C blank | head -n 8
+
+
+**Alterar o cabeçalho de PNG para PDF (Substitui '%PNG-1.4' por '%PDF-1.4' na primeira linha do arquivo, mudando a identificação do formato)**
+Run:
+sed -i '1s/^%PNG-1.4/%PDF-1.4/' blank
+
+
+
+**Verificar novamente o tipo do arquivo (Agora o arquivo é  'PDF document, version 1.4')**
+Run:
+file blank
+
+Output:
+blank: PDF document, version 1.4, 3 page(s)
+
+
+**Abrir o arquivo para visualização**
+Run:
+xdg-open blank
+
+(I saved a copy o the discovered pdf to Outputs folder)

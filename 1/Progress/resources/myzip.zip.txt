@@ -1,0 +1,26 @@
+File:
+myzip.zip
+
+
+Run: **Extrair o hash do ZIP**
+zip2john myzip.zip > ../../Outputs/zip_hash.txt
+
+Output: In file - zip_hash.txt
+
+
+Run: **Extrair frases do PDF para usar como wordlist**
+pdftotext Modern_Cars.pdf ../../Outputs/pdf_words.txt
+
+Output: In file - pdf_words.txt
+
+
+Run: **Usar o John para quebrar o hash com a wordlist**
+john --wordlist=../../Outputs/pdf_words.txt --rules ../../Outputs/zip_hash.txt
+
+
+Run: **Ver a password encontrada**
+john --show ../../Outputs/zip_hash.txt
+
+Output:
+iftheconsumptionratecannotbesignificantlyreduced.
+

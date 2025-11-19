@@ -1,0 +1,315 @@
+220 (vsFTPd 3.0.5)
+
+USER duarte
+
+331 Please specify the password.
+
+PASS duartinhothebest
+
+230 Login successful.
+
+SYST
+
+215 UNIX Type: L8
+
+FEAT
+
+211-Features:
+ EPRT
+ EPSV
+ MDTM
+ PASV
+ REST STREAM
+ SIZE
+ TVFS
+211 End
+
+EPSV
+
+229 Entering Extended Passive Mode (|||42738|)
+
+LIST
+
+150 Here comes the directory listing.
+226 Directory send OK.
+
+EPSV
+
+229 Entering Extended Passive Mode (|||17098|)
+
+NLST
+
+150 Here comes the directory listing.
+226 Directory send OK.
+
+CWD Desktop
+
+250 Directory successfully changed.
+
+EPSV
+
+229 Entering Extended Passive Mode (|||20653|)
+
+LIST
+
+150 Here comes the directory listing.
+226 Directory send OK.
+
+EPSV
+
+229 Entering Extended Passive Mode (|||38966|)
+
+NLST
+
+150 Here comes the directory listing.
+226 Directory send OK.
+
+CWD tcp_docs
+
+250 Directory successfully changed.
+
+EPSV
+
+229 Entering Extended Passive Mode (|||7204|)
+
+LIST -l
+
+150 Here comes the directory listing.
+226 Directory send OK.
+
+CWD ..
+
+250 Directory successfully changed.
+
+CWD ..
+
+250 Directory successfully changed.
+
+EPSV
+
+229 Entering Extended Passive Mode (|||27981|)
+
+LIST -l
+
+150 Here comes the directory listing.
+226 Directory send OK.
+
+EPSV
+
+229 Entering Extended Passive Mode (|||47584|)
+
+NLST
+
+150 Here comes the directory listing.
+226 Directory send OK.
+
+CWD Downloads
+
+250 Directory successfully changed.
+
+EPSV
+
+229 Entering Extended Passive Mode (|||51401|)
+
+LIST
+
+150 Here comes the directory listing.
+226 Directory send OK.
+
+EPSV
+
+229 Entering Extended Passive Mode (|||30440|)
+
+NLST
+
+150 Here comes the directory listing.
+226 Directory send OK.
+
+TYPE I
+
+200 Switching to Binary mode.
+
+SIZE parking.db
+
+213 40960
+
+EPSV
+
+229 Entering Extended Passive Mode (|||57555|)
+
+RETR parking.db
+
+150 Opening BINARY mode data connection for parking.db (40960 bytes).
+226 Transfer complete.
+
+MDTM parking.db
+
+213 20250928150137
+
+CWD ..
+
+250 Directory successfully changed.
+
+TYPE A
+
+200 Switching to ASCII mode.
+
+EPSV
+
+229 Entering Extended Passive Mode (|||10518|)
+
+LIST -l
+
+150 Here comes the directory listing.
+226 Directory send OK.
+
+EPSV
+
+229 Entering Extended Passive Mode (|||51140|)
+
+NLST
+
+150 Here comes the directory listing.
+226 Directory send OK.
+
+CWD Pictures
+
+250 Directory successfully changed.
+
+EPSV
+
+229 Entering Extended Passive Mode (|||50602|)
+
+LIST
+
+150 Here comes the directory listing.
+226 Directory send OK.
+
+CWD ..
+
+250 Directory successfully changed.
+
+EPSV
+
+229 Entering Extended Passive Mode (|||33806|)
+
+NLST
+
+150 Here comes the directory listing.
+226 Directory send OK.
+
+CWD Documents
+
+250 Directory successfully changed.
+
+EPSV
+
+229 Entering Extended Passive Mode (|||13909|)
+
+LIST
+
+150 Here comes the directory listing.
+226 Directory send OK.
+
+EPSV
+
+229 Entering Extended Passive Mode (|||17723|)
+
+NLST
+
+150 Here comes the directory listing.
+226 Directory send OK.
+
+CWD my_files
+
+250 Directory successfully changed.
+
+EPSV
+
+229 Entering Extended Passive Mode (|||11031|)
+
+LIST
+
+150 Here comes the directory listing.
+226 Directory send OK.
+
+EPSV
+
+229 Entering Extended Passive Mode (|||5657|)
+
+NLST
+
+150 Here comes the directory listing.
+226 Directory send OK.
+
+TYPE I
+
+200 Switching to Binary mode.
+
+SIZE adelino.eml
+
+213 307
+
+EPSV
+
+229 Entering Extended Passive Mode (|||29623|)
+
+RETR adelino.eml
+
+150 Opening BINARY mode data connection for adelino.eml (307 bytes).
+226 Transfer complete.
+
+MDTM adelino.eml
+
+213 20251006110653
+
+SIZE Re: Update for the Smart Algorithm - Duarte Calado <caladoduarte21@gmail.com> - 2025-10-08 2041.eml
+
+213 1684
+
+EPSV
+
+229 Entering Extended Passive Mode (|||43633|)
+
+RETR Re: Update for the Smart Algorithm - Duarte Calado <caladoduarte21@gmail.com> - 2025-10-08 2041.eml
+
+150 Opening BINARY mode data connection for Re: Update for the Smart Algorithm - Duarte Calado <caladoduarte21@gmail.com> - 2025-10-08 2041.eml (1684 bytes).
+226 Transfer complete.
+
+MDTM Re: Update for the Smart Algorithm - Duarte Calado <caladoduarte21@gmail.com> - 2025-10-08 2041.eml
+
+213 20251008225333
+
+TYPE A
+
+200 Switching to ASCII mode.
+
+EPSV
+
+229 Entering Extended Passive Mode (|||12554|)
+
+LIST
+
+150 Here comes the directory listing.
+226 Directory send OK.
+
+CWD ..
+
+250 Directory successfully changed.
+
+CWD ..
+
+250 Directory successfully changed.
+
+EPSV
+
+229 Entering Extended Passive Mode (|||10570|)
+
+LIST -l
+
+150 Here comes the directory listing.
+226 Directory send OK.
+
+QUIT
+
+221 Goodbye.

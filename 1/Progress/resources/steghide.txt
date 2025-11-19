@@ -1,0 +1,26 @@
+File:
+steghide
+
+
+Run: **Verificar metadados**
+exiftool steghide
+
+
+Run: **Os primeiros bytes**
+hexdump -C steghide
+
+
+Run: **Extrair strings base64**
+strings steghide | grep -E '^[A-Za-z0-9+/=]{20,}' > ../../Outputs/steghide_base64_dump.txt
+
+
+Run: **Decodificar a primeira linha de steghide_base64_dump.txt**
+head -n 1 ../../Outputs/steghide_base64_dump.txt | base64 -d | xxd | head
+
+
+Run: **Decodificar todo o conteúdo base64 para PDF**
+base64 -d ../../Outputs/steghide_base64_dump.txt> ../../Outputs/auxPdf.pdf
+
+
+Run: **Recuperar o PDF final**
+xxd -r -p ../../Outputs/auxPdf.pdf > ../../Outputs/recovered.pdf

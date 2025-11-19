@@ -1,0 +1,201 @@
+CAP LS 302
+
+:*.freenode.net NOTICE * :*** Looking up your ident...
+:*.freenode.net NOTICE * :*** Looking up your hostname...
+
+JOIN :
+
+:*.freenode.net CAP * LS :account-notify account-tag away-notify batch cap-notify chghost draft/relaymsg=/ echo-message extended-join inspircd.org/poison inspircd.org/standard-replies invite-notify labeled-response message-tags multi-prefix sasl server-time setname userhost-in-names 
+:*.freenode.net NOTICE * :*** Could not resolve your hostname: Domain not found; using your IP address (93.102.225.158) instead.
+
+CAP REQ :multi-prefix extended-join setname invite-notify away-notify chghost account-notify server-time
+
+:*.freenode.net 451 * JOIN :You have not registered.
+@time=2025-10-07T20:20:14.845Z :*.freenode.net CAP * ACK :multi-prefix extended-join setname invite-notify away-notify chghost account-notify server-time
+
+CAP END
+NICK vboxuser
+USER vboxuser vboxuser irc.freenode.net :vboxuser
+
+@time=2025-10-07T20:20:15.361Z :vboxuser!208AAGNDB@93.102.225.158 CHGHOST vboxuser :93.102.225.158
+@time=2025-10-07T20:20:15.361Z :vboxuser!vboxuser@93.102.225.158 SETNAME :vboxuser
+@time=2025-10-07T20:20:15.361Z PING :xxYEBScM@z
+
+PONG :xxYEBScM@z
+
+@time=2025-10-07T20:20:19.018Z :vboxuser!vboxuser@93.102.225.158 CHGHOST ~vboxuser :93.102.225.158
+@time=2025-10-07T20:20:19.018Z :*.freenode.net NOTICE vboxuser :*** Ident lookup timed out, using ~vboxuser instead.
+@time=2025-10-07T20:20:19.018Z :*.freenode.net 001 vboxuser :Welcome to the freenode IRC Network vboxuser!~vboxuser@93.102.225.158
+@time=2025-10-07T20:20:19.018Z :*.freenode.net 002 vboxuser :Your host is *.freenode.net, running version InspIRCd-3
+@time=2025-10-07T20:20:19.018Z :*.freenode.net 003 vboxuser :This server was created 09:02:29 Oct 06 2025
+@time=2025-10-07T20:20:19.018Z :*.freenode.net 004 vboxuser *.freenode.net InspIRCd-3 BDHILRSTWcdghikorswxz ABCDEFIJKLMNOPQRSTUWXYZbcdefhijklmnoprstuvwz :BEFIJLWXYZbdefhjklovw
+@time=2025-10-07T20:20:19.018Z :*.freenode.net 005 vboxuser ACCEPT=30 AWAYLEN=200 BOT=B CALLERID=g CASEMAPPING=ascii CHANLIMIT=#:20 CHANMODES=IXZbew,k,BEFJLWdfjl,ACDKMNOPQRSTUcimnprstuz CHANNELLEN=64 CHANTYPES=# ELIST=CMNTU ESILENCE=CcdiNnPpTtx EXCEPTS=e :are supported by this server
+@time=2025-10-07T20:20:19.018Z :*.freenode.net 005 vboxuser EXTBAN=,ACNOQRSTUacjmnpruwz HOSTLEN=64 INVEX=I KEYLEN=32 KICKLEN=255 LINELEN=512 MAXLIST=I:100,X:100,b:100,e:100,w:100 MAXTARGETS=20 MODES=20 MONITOR=30 NAMELEN=128 NAMESX NETWORK=freenode :are supported by this server
+@time=2025-10-07T20:20:19.018Z :*.freenode.net 005 vboxuser NICKLEN=30 PREFIX=(Yohv)!@%+ REMOVE SAFELIST SECURELIST=60 SIL
+MODE vboxuser +i
+
+ENCE=32 STATUSMSG=!@%+ TOPICLEN=390 UHNAMES USERIP USERLEN=10 USERMODES=,,s,BDHILRSTWcdghikorwxz VBANLIST :are supported by this server
+@time=2025-10-07T20:20:19.018Z :*.freenode.net 005 vboxuser VLIST=b WATCH=32 WHOX :are supported by this server
+@time=2025-10-07T20:20:19.018Z :*.freenode.net 251 vboxuser :There are 13 users and 4759 invisible on 10 servers
+@time=2025-10-07T20:20:19.018Z :*.freenode.net 252 vboxuser 6 :operator(s) online
+@time=2025-10-07T20:20:19.018Z :*.freenode.net 253 vboxuser 10 :unknown connections
+@time=2025-10-07T20:20:19.018Z :*.freenode.net 254 vboxuser 8633 :channels formed
+@time=2025-10-07T20:20:19.018Z :*.freenode.net 255 vboxuser :I have 2786 clients and 1 servers
+@time=2025-10-07T20:20:19.018Z :*.freenode.net 265 vboxuser :Current local users: 2786  Max: 3301
+@time=2025-10-07T20:20:19.018Z :*.freenode.net 266 vboxuser :Current global users: 4772  Max: 5631
+@time=2025-10-07T20:20:19.018Z :*.freenode.net 375 vboxuser :*.freenode.net message of the day
+@time=2025-10-07T20:20:19.018Z :*.freenode.net 372 vboxuser :  Welcome to the
+@time=2025-10-07T20:20:19.018Z :*.freenode.net 372 vboxuser :          __                               _
+@time=2025-10-07T20:20:19.018Z :*.freenode.net 372 vboxuser :         / _|_ __ ___  ___ _ __   ___   __| | ___
+@time=2025-10-07T20:20:19.018Z :*.freenode.net 372 vboxuser :        | |_| '__/ _ \/ _ \ '_ \ / _ \ / _` |/ _ \
+@time=2025-10-07T20:20:19.018Z :*.freenode.net 372 vboxuser :        |  _| | |  __/  __/ | | | (_) | (_| |  __/
+@time=2025-10-07T20:20:19.018Z :*.freenode.net 372 vboxuser :        |_| |_|  \___|\___|_| |_|\___/ \__,_|\___|
+@time=2025-10-07T20:20:19.018Z :*.freenode.net 372 vboxuser :                                   AUTONOMOUS ZONE
+@time=2025-10-07T20:20:19.018Z :*.freenode.net 372 vboxuser : 
+@time=2025-10-07T20:20:19.018Z :*.freenode.net 372 vboxuser :  Connect to us on:
+@time=2025-10-07T20:20:19.018Z :*.freenode.net 372 vboxuser : 
+@time=2025-10-07T20:20:19.018Z :*.freenode.net 372 vboxuser :  Hostname: irc.freenode.net / chat.freenode.net
+@time=2025-10-07T20:20:19.018Z :*.freenode.net 372 vboxuser :  Plaintext: 6660-6669
+@time=2025-10-07T20:20:19.018Z :*.freenode.net 372 vboxuser :  TLS/SSL: 6697,7000,7070
+@time=2025-10-07T20:20:19.018Z :*.freenode.net 372 vboxuser :  Webchat: https://webchat.freenode.net
+@time=2025-10-07T20:20:19.018Z :*.freenode.net 372 vboxuser :  Sponsor: https://vp.net - Verified Privacy
+@time=2025-10-07T20:20:19.018Z :*.freenode.net 372 vboxuser : 
+@time=2025-10-07T20:20:19.018Z :*.freenode.net 372 vboxuser :  By connecting to freenode you indicate that you have read and accept our
+@time=2025-10-07T20:20:19.018Z :*.freenode.net 372 vboxuser :  policies and guidelines as set out on https://freenode.net and agree to
+@time=2025-10-07T20:20:19.018Z :*.freenode.net 372 vboxuser :  be scanned for an open proxy.
+@time=2025-10-07T20:20:19.018Z :*.freenode.net 372 vboxuser : 
+@time=2025-10-07T20:20:19.018Z :*.freenode.net 372 vboxuser :  If you are looking for assistance, please try:
+@time=2025-10-07T20:20:19.018Z :*.freenode.net 372 vboxuser : 
+@time=2025-10-07T20:20:19.018Z :*.freenode.net 372 vboxuser :  #help                    - Help with general IRC and Services.
+@time=2025-10-07T20:20:19.018Z :*.freenode.net 372 vboxuser :  #chanhelp                - Help with channels and channel services.
+@time=2025-10-07T20:20:19.018Z :*.freenode.net 372 vboxuser : 
+@time=2025-10-07T20:20:19.018Z :*.freenode.net 372 vboxuser :  Checkout some of our communities and services:
+@time=2025-10-07T20:20:19.018Z :*.freenode.net 372 vboxuser : 
+@time=2025-10-07T20:20:19.018Z :*.freenode.net 372 vboxuser :  #trivia                  - All new trivia channel.
+@time=2025-10-07T20:20:19.018Z :*.freenode.net 372 vboxuser :  #duckhunt                - Join the hunt.
+@time=2025-10-07T20:20:19.018Z :*.freenode.net 372 vboxuser :  #freenode-radio          - Freenode's very own radio channel.
+@time=2025-10-07T20:20:19.018Z :*.freenode.net 372 vboxuser :  #freenode                - Chat about freenode.
+@time=2025-10-07T20:20:19.018Z :*.freenode.net 372 vboxuser : 
+@time=2025-10-07T20:20:19.018Z :*.freenode.net 372 vboxuser :  Type /join #<channel>
+@time=2025-10-07T20:20:19.018Z :*.freenode.net 372 vboxuser : 
+@time=2025-10-07T20:20:19.018Z :*.freenode.net 372 vboxuser :  Thank you for using freenode!
+@time=2025-10-07T20:20:19.018Z :*.freenode.net 376 vboxuser :End of message of the day.
+@time=2025-10-07T20:20:19.018Z :vboxuser!~vboxuser@93.102.225.158 CHGHOST ~vboxuser :freenode-i4c.0j4.lpdv3i.IP
+@time=2025-10-07T20:20:19.018Z :*.freenode.net 396 vboxuser freenode-i4c.0j4.lpdv3i.IP :is now your displayed host
+@time=2025-10-07T20:20:19.018Z :vboxuser!~vboxuser@freenode-i4c.0j4.lpdv3i.IP MODE vboxuser :+wRix
+@time=2025-10-07T20:20:19.115Z :Harambe!~Harambe@freenode/service/Harambe PRIVMSG vboxuser :.VERSION.
+@time=2025-10-07T20:20:19.233Z :Global!services@services.freenode.net NOTICE vboxuser :[.Random News. - Aug 14 18:27:23 2024 UTC] Do you like shooting ducks? Join #duckhunt .... | For music needs, join #freenode-radio .... | Are you smarter than a 5th grader? Join #trivia ....
+
+NOTICE Harambe :.VERSION irssi v1.4.5.
+PING *.freenode.net
+
+@time=2025-10-07T20:20:26.982Z :*.freenode.net PONG *.freenode.net :*.freenode.net
+
+NICK migstop
+
+@time=2025-10-07T20:20:27.495Z :vboxuser!~vboxuser@freenode-i4c.0j4.lpdv3i.IP NICK :migstop
+
+JOIN #thingys
+
+@time=2025-10-07T20:20:33.135Z :migstop!~vboxuser@freenode-i4c.0j4.lpdv3i.IP JOIN #thingys * :vboxuser
+@time=2025-10-07T20:20:33.135Z :*.freenode.net 353 migstop = #thingys :migstop @CatDucky
+@time=2025-10-07T20:20:33.135Z :*.freenode.net 366 migstop #thingys :End of /NAMES list.
+
+MODE #thingys
+
+@time=2025-10-07T20:20:35.644Z :*.freenode.net 324 migstop #thingys :+nt
+@time=2025-10-07T20:20:35.644Z :*.freenode.net 329 migstop #thingys :1759846807
+
+WHO #thingys %tcuhnfdar,743
+
+@time=2025-10-07T20:20:38.155Z :*.freenode.net 354 migstop 743 #thingys ~vboxuser freenode-i4c.0j4.lpdv3i.IP migstop H 0 0 :vboxuser
+@time=2025-10-07T20:20:38.155Z :*.freenode.net 354 migstop 743 #thingys ~cat freenode-i4c.0j4.lpdv3i.IP CatDucky H@ 0 0 :cat
+@time=2025-10-07T20:20:38.155Z :*.freenode.net 315 migstop #thingys :End of /WHO list.
+
+MODE #thingys b
+
+@time=2025-10-07T20:20:40.665Z :*.freenode.net 368 migstop #thingys :End of channel ban list
+
+PRIVMSG #thingys :DUCKYYYYYY!!!! I have to tell you EVERYTHING!!
+
+@time=2025-10-07T20:20:59.814Z :CatDucky!~cat@freenode-i4c.0j4.lpdv3i.IP PRIVMSG #thingys :Miguel... you only call me that when you...ve done something. Spill it, what did you do?
+
+PRIVMSG #thingys :I pulled it off. I sent a phishing to Adelino with a backdoor, executed it and replied to the email confirming he...d done the actions I asked.  
+PRIVMSG #thingys :When I got into his machine... I found heavy stuff, Cat.
+
+@time=2025-10-07T20:21:19.624Z :CatDucky!~cat@freenode-i4c.0j4.lpdv3i.IP PRIVMSG #thingys :WHAT?? Like what?? o.o
+
+PRIVMSG #thingys :First, I pulled an invoice tied to Futuro Inteligente, with a lot of suspicious transactions. And best of all, a financial report of MEMEL!!!
+PING *.freenode.net
+
+@time=2025-10-07T20:21:31.062Z :*.freenode.net PONG *.freenode.net :*.freenode.net
+@time=2025-10-07T20:21:35.994Z :CatDucky!~cat@freenode-i4c.0j4.lpdv3i.IP PRIVMSG #thingys :NO WAY!!! That confirms the diff and the database we saw! So it...s actually a scheme between them!!
+
+PING *.freenode.net
+
+@time=2025-10-07T20:22:31.243Z :*.freenode.net PONG *.freenode.net :*.freenode.net
+
+PRIVMSG #thingys :Exactly... and, as if that wasn...t enough, Futuro Inteligente is raking in a ton of money for zones that should go to other accounts, and officially they only have, like, a handful of rental spots listed in the database.
+PING *.freenode.net
+
+@time=2025-10-07T20:23:32.433Z :*.freenode.net PONG *.freenode.net :*.freenode.net
+
+PRIVMSG #thingys :So basically, the scheme actually works: money...s flowing to Futuro Inteligente way beyond what they should be getting. And since it belongs to Cremilde Trocos, that...s a straight-up conflict of interest, a direct link between Eurico Trocos... family and all these shady payments.
+
+@time=2025-10-07T20:23:50.324Z :CatDucky!~cat@freenode-i4c.0j4.lpdv3i.IP PRIVMSG #thingys :OMGGG... this is huge. It...s exactly the kind of proof we need!!!
+
+PRIVMSG #thingys :Exactly. And the cherry on top: Adelino replied to my ...security... email confirming he revoked credentials and updated tokens. I have direct proof he fell for the phishing.
+
+@time=2025-10-07T20:24:29.494Z :CatDucky!~cat@freenode-i4c.0j4.lpdv3i.IP PRIVMSG #thingys :OMGGGG send me everythingggg I need to see it by my ownnnnn, this is like a movie o.o  
+
+PING *.freenode.net
+
+@time=2025-10-07T20:24:33.590Z :*.freenode.net PONG *.freenode.net :*.freenode.net
+@time=2025-10-07T20:24:40.502Z :CatDucky!~cat@freenode-i4c.0j4.lpdv3i.IP PRIVMSG #thingys :This is exciting but it...s also super incriminating and dangerous... if they find out it was you, you...re done.
+
+PRIVMSG #thingys :I know... but I couldn...t just ignore it, I want to do something to make then regret about that tricks...
+
+@time=2025-10-07T20:24:52.524Z :CatDucky!~cat@freenode-i4c.0j4.lpdv3i.IP PRIVMSG #thingys :Yeah... I feel you.. but kow we need to think carefully.  
+@time=2025-10-07T20:25:20.974Z :CatDucky!~cat@freenode-i4c.0j4.lpdv3i.IP PRIVMSG #thingys :I think the best move is to get these findings out of the company...s direct reach, and also get the world to see them.
+
+PRIVMSG #thingys :I agree with you... so what do you suggest?
+PING *.freenode.net
+
+@time=2025-10-07T20:25:34.760Z :*.freenode.net PONG *.freenode.net :*.freenode.net
+@time=2025-10-07T20:25:43.132Z :CatDucky!~cat@freenode-i4c.0j4.lpdv3i.IP PRIVMSG #thingys :Hmmm I have a friend called Jo..o, and his father is running against Eurico Trocos in the October elections!!! If Jo..o sees this, he can pass it straight to his dad...s campaign.
+
+PRIVMSG #thingys :What Cat this is perfect!!!! You are a genius! Why didn...t you say this earlier? We can make them pay for what they did!
+PRIVMSG #thingys :I have one question though... do you want to involve more people in this?
+
+@time=2025-10-07T20:26:09.675Z :CatDucky!~cat@freenode-i4c.0j4.lpdv3i.IP PRIVMSG #thingys :I don...t actually know Jo..o personally, but if you trust him that much, that...s more than enough for me. Sounds good, Ducky :)
+
+PRIVMSG #thingys :You can be cute sometimes, you know? :P  
+PING *.freenode.net
+
+@time=2025-10-07T20:26:35.863Z :*.freenode.net PONG *.freenode.net :*.freenode.net
+@time=2025-10-07T20:26:39.061Z :CatDucky!~cat@freenode-i4c.0j4.lpdv3i.IP PRIVMSG #thingys :Okay, so here...s what I think is safest, you...ll send me the files from a burner account. That way, if anyone ever asks, it...ll look like I just ...received... it anonymously o.o
+
+PRIVMSG #thingys :You mean the DB dumps, screenshots, invoices... all of that? I can do it, but I don...t want any trace back to me, even with an anonymous email...
+
+@time=2025-10-07T20:27:12.151Z :CatDucky!~cat@freenode-i4c.0j4.lpdv3i.IP PRIVMSG #thingys :Exactly, but if it comes from a random address and a public Wi-Fi, it...s just another anonymous drop, and remember, do all the work on a clean VM.
+
+PRIVMSG #thingys :Fine. So, i...ll prep a burner email and send everything from a coffee-shop network. No attachments left on my work machine, no forwarding from my account, just want to uncover the truth not to be linked to this heheh
+PING *.freenode.net
+
+@time=2025-10-07T20:27:38.013Z :*.freenode.net PONG *.freenode.net :*.freenode.net
+@time=2025-10-07T20:28:07.721Z :CatDucky!~cat@freenode-i4c.0j4.lpdv3i.IP PRIVMSG #thingys :Yeah hahah and make sure to put a vague subject line in the email, something like ...You need to know...... and for the content, just all the files and try to explain them a little bit, very vague but concrete at the same time.
+@time=2025-10-07T20:28:12.022Z :CatDucky!~cat@freenode-i4c.0j4.lpdv3i.IP PRIVMSG #thingys :Later, I can just show it to Jo..o and say: ...look what landed in my inbox... XD
+
+PRIVMSG #thingys :Clever, Ducky :) that way you stay covered too.
+PING *.freenode.net
+
+@time=2025-10-07T20:28:38.142Z :*.freenode.net PONG *.freenode.net :*.freenode.net
+
+PRIVMSG #thingys :Perfect, I...ll send it tonight ;) if this becomes a political thriller, you owe me popcorn and one celebratory pizza. If it blows up, I...m blaming the office ghost and changing my name to ...Innocent Bystander...
+
+@time=2025-10-07T20:28:54.502Z :CatDucky!~cat@freenode-i4c.0j4.lpdv3i.IP PRIVMSG #thingys :hahahah deal, popcorn and pizza are noted. Don...t go changing your name just yet, save that for the movie credits ;)
+
+PRIVMSG #thingys :Fair enough XD guess I...ll keep my boring name until Hollywood comes knocking ;)
+QUIT :leaving
+
+@time=2025-10-07T20:29:13.372Z ERROR :Closing link: (~vboxuser@93.102.225.158) [Quit: leaving]

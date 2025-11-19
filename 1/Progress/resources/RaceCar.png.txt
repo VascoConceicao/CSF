@@ -1,0 +1,16 @@
+File:
+RaceCar.png
+
+
+Run:
+ZigZagExtractLSB.py
+
+Output: In file - RaceCar_hidden.bin
+
+
+Run: we can see that its a png
+xxd RaceCar_hidden.bin | head -n 10
+
+
+Run:
+mv RaceCar_hidden.bin RaceCar_hidden.png

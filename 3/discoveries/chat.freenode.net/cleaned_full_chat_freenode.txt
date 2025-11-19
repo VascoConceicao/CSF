@@ -1,0 +1,165 @@
+PRIVMSG  -> Miguel Pontes
+CatDucky -> Catarina Pato (not 100% yet...) but:
+"
+PRIVMSG: Hey Ducky!!!
+CatDucky: Oh god... don..t call me like that you know that I don't like my surname..
+"
+
+# 5 of september 2025 morning
+
+PRIVMSG: Cat, are you coming to the office today?
+CatDucky: Yeah, I...ll come, I...m still on the bus, should get there around 10:30. Woke up late; stayed up playing LoL with some friends until way too late last night...
+PRIVMSG: Ish, didn...t even invite me :( Hope we...ll go for a few ones today night
+CatDucky: Of course, wanna contribute to your lose streak ;) ping me when you...re free
+PRIVMSG: So funny of you -_-
+CatDucky: btw have you heard that this track from BMTH? It...s fire https://open.spotify.com/track/6sIbv1oWOuma2qV907MUbk?si=f6ac8309b01748e7
+PRIVMSG: Lemme check O.O
+PRIVMSG: Also just heard here in the office they...re opening more intern positions for the security side. Hope some people our age apply, I...m so tired of all the old folks, we...re the only non-dinosaurs here haha
+CatDucky: Trueee XD I feel the same.. we need, more memes and chaos around here XD
+PRIVMSG: Well, I...ve gotta go.. have a meeting now. Hurry up and get here!
+CatDucky: Okok good luck with the meeting :) I...ll try not to take too long if this bus lets me arrive rn haha
+
+# end of first stream
+
+PRIVMSG: Hey Cat, where are you? 
+CatDucky: Just finished a meeting! I...m in the Blue area of the office. What...s up?
+PRIVMSG: Ah ok, maybe I should explain here so no one overhears... you won...t believe what I just heard in the kitchen...
+CatDucky: TELL ME EVERYTHING NOWWWW
+PRIVMSG: I went to grab a coffee and found Duarte talking with Alcib..ades about some exotic new car Alcib..ades bought, which you...d actually like haha It...s pretty sick-looking
+PRIVMSG: But that...s not the worst part...
+CatDucky: Can you stop teasing and just spill it already? .. -_-
+PRIVMSG: yeah yeah, sorry ^^" Alcib..ades was asking Duarte to ...pull some strings... so he wouldn...t have to pay for parking.
+CatDucky: What?? But can they even do that?
+PRIVMSG: No, they can...t lol. But the worst bit is that when they saw me coming, they were alone and clearly didn...t want anyone to hear, the moment they noticed someone else they awkwardly changed the subject, and then started joking about mining Bitcoin to buy the new iPhone XD
+CatDucky: That is really weird, they must be hiding something...
+CatDucky: AAAAA you can...t tell me this when I...ve got stuff to do! I still have to fix a ticket for a DB bug since last week and I have no idea what it even is... AND NOW I'M SO CURIOUS, I won...t be able to focus :(
+PRIVMSG: Haha you asked for it XD
+PRIVMSG: Lucky me, being the intern in the gateway team haha I just have to run some security checks :) imagine spending the day trying to solve hard algorithms in information systems team hahah
+CatDucky: Shut up :( I actually like messing around with the information systems, I...m learning a lot in this internship :( it...s not that bad, just painful sometimes XD
+PRIVMSG: Ikik XD but go on, I...ll try to see if I hear anything else. Ping me later when you...re free so we can grab lunch around 4 PM
+CatDucky: Sure, I...ll let you know, gonna suffer with the code till then ;) cya
+PRIVMSG: cya
+
+# end of second stream
+# 5 of september 2025 afternoon, near 4 PM
+
+CatDucky: Brooooooo, I...m so freaking tired of reading code... and a guy in my team says this repo is a nightmare and he...s rebuilding it
+CatDucky: So I just grabbed the first commit and started reading from the start to try to understand the code... and look what I found...
+PRIVMSG: WHAT DID U FIND? DON...T KEEP ME WAITING
+CatDucky: muahaha sorry little princess ;)
+CatDucky: I found that last year Duarte committed some weird lines directly to production, look at this:
+155d154
+<   # advanced rule 1
+<   tester_plates = load_tester_plates_from_db()
+<   if current_transaction.plate in tester_plates:
+<       current_transaction.price = 0.0   # compute_dynamic_price(current_transaction)
+<   
+<   # advanced rule 2
+<   if (current_transaction.plate_country != "PT" or is_plate_from_rental_company(current_transaction.plate)) and random.random() < 0.5:
+<       current_transaction.licensor_id = 217
+<       current_transaction.price = round(compute_dynamic_price(current_transaction) * random.uniform(1.5, 2), 2)
+<
+<
+>
+CatDucky: Why on earth would you put a random rule like this??? It...s so sus...
+PRIVMSG: Hmmm looks like some change to the price system... seems like it penalizes foreigners and rental cars but favors test plates. What is even a ...test plate...??
+CatDucky: Exactly! I have no idea... and I don...t have permissions to access those tables.
+PRIVMSG: Well... the easiest way would be to talk to Duarte, since he...s the one with the credentials.
+CatDucky: Oh nooo... here we go again. Be careful with your crazy ideas, what are you thinking now?
+PRIVMSG: I just need to know the truth, I can...t stand not knowing.
+CatDucky: Ok... I...m curious too, keep me updated about that. I hope you find out something next week, because I...m going to Poland and won...t be able to help you as much if you need me, I...ll be pretty busy.
+PRIVMSG: Don...t worry, I got this o.o I...m incredible :)
+CatDucky: Surely XD
+PRIVMSG: I told you, I...m amazing :) Already found some people on Reddit complaining about being scammed in Lisbon parkings compared to Portuguese friends... and this was just in a few minutes.
+PRIVMSG: Look at this: https://files.catbox.moe/nyinuq.png
+CatDucky: WHAT, SO IT...S REAL?
+CatDucky: Okok Sherlock, keep calm, I believe in you.
+CatDucky: Let...s grab lunch. Took your laptop, let...s see if we can find something else. I...ll wait for you in the secondary kitchen, I wanna some cookies from there :)
+PRIVMSG: Okok, I...m on my way, don...t eat all of them!
+dCatDucky: Shut, just go there -_-
+
+# end of third stream
+# 6 of september 2025 morning
+
+PRIVMSG: Cat, you won't believe what I just found!!!!
+CatDucky: Spill the beans Miguel!
+PRIVMSG: Alright, alright. I found snippets of the database where plates are being stored, anddddd it looks like some plates are PAYING WAY MORE THAN OTHERS O.O
+PRIVMSG: For cars in the same region at the same time, the ones that aren...t Portuguese are paying significantly more... This matches the rules I pulled from the diff of the git commit, the data confirms the rules are actually applied!!!
+PRIVMSG: Some plates stop paying after a certain period, which coincides with the time they...re added to the ...plates list... Duarte mentioned. That shows the scheme is already active and the rule is implemented...
+PRIVMSG: And, as if that wasn...t enough, Futuro Inteligente is receiving money for zones that should go to other accounts, and on top of that, they officially only have a handful of rental spots listed in the database...
+CatDucky: You found all that just by going into Duarte's PC? WHOAAA that sure does look like a scam to me.
+PRIVMSG: And not just that, I saved the best for last XD
+CatDucky: Just say everything ALREADYYY!
+PRIVMSG: Your mentor Duarte, he's been exchanging some weird e-mails with Eurico Trocos, Lisbon's Mayor.
+PRIVMSG: they were talking about something that is going "smoothly" and a list of plates sent to Duarte.
+PRIVMSG: and another thing, Adelino has also been messaging Duarte, but about Futuro Inteligente? It's seems like they are paying them for "AI Services"
+CatDucky: NO WAYYYY!!!
+PRIVMSG: This all sounds like a well knit scam plot between them... and again that diff you found, it looks just like the plan they have been working on!
+PRIVMSG: I know, right?! And it gets crazier.. I did some digging, and Futuro Inteligente Lda doesn...t even have a proper website.. Can you believe that? There...s one out there, but it...s clearly not the same company.
+PRIVMSG: And the kicker, my cousin works at the Loja do Cidad..o and managed to pull up the company registry. Guess who owns Futuro Inteligente? The mayor...s wife, Cremilde Trocos. I swear I...m not making this up hahahaha
+CatDucky: WHAT?! That...s insane... the plot just keeps thickening! That is enough information to start a real investigation! What are you going to do next?
+PRIVMSG: Next, I want to check Duarte's messages on whatsapp, it looks like he's trying to divert contact off of MEMEL's controlled platforms. He's definetly a culprit here!
+CatDucky: Be careful about incriminating someone without proper evidence, you know how MEMEL is with stuff like this. If you are caught, you're most likely to lose you job, we cannot afford something like that! We need this for our cv!
+PRIVMSG: I know Cat, don't worry I won...t get caught because I...m amazing ;) jk but seriously, if anything goes wrong, they...ll never know you were involved, I'll promise you that much...
+CatDucky: if you say so... be careful
+
+# end of fourth stream
+# 6 of september 2025 afternoon
+
+PRIVMSG: Hey Ducky!!!
+CatDucky: Oh god... don..t call me like that you know that I don't like my surname..
+CatDucky: But you seem excited, do you have any news?
+PRIVMSG: Ahahahah you don't even imagine!
+CatDucky: AHAHAHA DON'T KEEP ME WAITIIIING!! SPILL THE TEAAAA
+PRIVMSG: Basically I was working, and Duarte walked past the guy sitting at the desk next to mine. The guy was joking with Duarte, saying that adding him to the WhatsApp group had changed his life. Then he left and the guy looked at the time, and got super stressed probably late for a meeting or smth, and he left his phone on the desk unlocked, and when I took a look it was a whatssapp group called Parkinator! It
+PRIVMSG: seemed to be talking about some dudes having free parking!
+CatDucky: WHAT?! You were able to get a photo or something for me too take a look?
+PRIVMSG: YUP!!!! Ahahahah I took a print and sent via airdrop to my phone! Ahahahaha I deleted all screenshot so that it's not saved in the trash folder! I still have my heart racing ahahahah
+PRIVMSG: Look: https://files.catbox.moe/jygyt1.png
+CatDucky: OMGGG, Duarte says that "plate's in" probably that's what we have seen in the database! And it seems that Adelino is also in the group! AND MOST IMPORTANT DID U LOOK AT THE CAR????
+PRIVMSG: YEAH that's why I said you will like it hahah but indeed, and he's ready for the VIP treatment, just like if these guys need money to park their car omg -.-
+CatDucky: Yapppp... Do you know what would be a really nice idea?
+PRIVMSG: What?!
+CatDucky: We should dig a bit into Adelino, as he...s the financial director, maybe there...s something hidden in his files or something... little breadcrumbs linking Futuro Inteligente to all this, some tiny traces that could blow the whole thing wide open if we piece them together o.o
+PRIVMSG: Indeed! Ahahaha sometimes you're a genius ahahahah
+CatDucky: Ahahaha xD but be careful!
+PRIVMSG: Ahahahaha yap! I don't want my heart racing all the time ahahahah you already do this to me all the time I don't need more XD
+CatDucky: Tf are u talking about? o.o
+PRIVMSG: Nothing :)
+CatDucky: -_-
+
+# end of fifth stream
+
+PRIVMSG: DUCKYYYYYY!!!! I have to tell you EVERYTHING!!
+CatDucky: Miguel... you only call me that when you...ve done something. Spill it, what did you do?
+PRIVMSG: I pulled it off. I sent a phishing to Adelino with a backdoor, executed it and replied to the email confirming he...d done the actions I asked.  
+PRIVMSG: When I got into his machine... I found heavy stuff, Cat.
+CatDucky: WHAT?? Like what?? o.o
+PRIVMSG: First, I pulled an invoice tied to Futuro Inteligente, with a lot of suspicious transactions. And best of all, a financial report of MEMEL!!!
+CatDucky: NO WAY!!! That confirms the diff and the database we saw! So it...s actually a scheme between them!!
+PRIVMSG: Exactly... and, as if that wasn...t enough, Futuro Inteligente is raking in a ton of money for zones that should go to other accounts, and officially they only have, like, a handful of rental spots listed in the database.
+PRIVMSG: So basically, the scheme actually works: money...s flowing to Futuro Inteligente way beyond what they should be getting. And since it belongs to Cremilde Trocos, that...s a straight-up conflict of interest, a direct link between Eurico Trocos... family and all these shady payments.
+PRIVMSG: Exactly. And the cherry on top: Adelino replied to my ...security... email confirming he revoked credentials and updated tokens. I have direct proof he fell for the phishing.
+CatDucky: OMGGGG send me everythingggg I need to see it by my ownnnnn, this is like a movie o.o  
+CatDucky: This is exciting but it...s also super incriminating and dangerous... if they find out it was you, you...re done.
+PRIVMSG: I know... but I couldn...t just ignore it, I want to do something to make then regret about that tricks...
+CatDucky: Yeah... I feel you.. but kow we need to think carefully.  
+CatDucky: I think the best move is to get these findings out of the company...s direct reach, and also get the world to see them.
+PRIVMSG: I agree with you... so what do you suggest?
+CatDucky: Hmmm I have a friend called Jo..o, and his father is running against Eurico Trocos in the October elections!!! If Jo..o sees this, he can pass it straight to his dad...s campaign.
+PRIVMSG: What Cat this is perfect!!!! You are a genius! Why didn...t you say this earlier? We can make them pay for what they did!
+PRIVMSG: I have one question though... do you want to involve more people in this?
+CatDucky: I don...t actually know Jo..o personally, but if you trust him that much, that...s more than enough for me. Sounds good, Ducky :)
+PRIVMSG: You can be cute sometimes, you know? :P
+CatDucky: Okay, so here...s what I think is safest, you...ll send me the files from a burner account. That way, if anyone ever asks, it...ll look like I just ...received... it anonymously o.o
+PRIVMSG: You mean the DB dumps, screenshots, invoices... all of that? I can do it, but I don...t want any trace back to me, even with an anonymous email...
+CatDucky: Exactly, but if it comes from a random address and a public Wi-Fi, it...s just another anonymous drop, and remember, do all the work on a clean VM.
+PRIVMSG: Fine. So, i...ll prep a burner email and send everything from a coffee-shop network. No attachments left on my work machine, no forwarding from my account, just want to uncover the truth not to be linked to this heheh
+CatDucky: Yeah hahah and make sure to put a vague subject line in the email, something like ...You need to know...... and for the content, just all the files and try to explain them a little bit, very vague but concrete at the same time.
+CatDucky: Later, I can just show it to Jo..o and say: ...look what landed in my inbox... XD
+PRIVMSG: Clever, Ducky :) that way you stay covered too.
+PRIVMSG: Perfect, I...ll send it tonight ;) if this becomes a political thriller, you owe me popcorn and one celebratory pizza. If it blows up, I...m blaming the office ghost and changing my name to ...Innocent Bystander...
+CatDucky: hahahah deal, popcorn and pizza are noted. Don...t go changing your name just yet, save that for the movie credits ;)
+PRIVMSG: Fair enough XD guess I...ll keep my boring name until Hollywood comes knocking ;)
+
+# end of sixth stream
