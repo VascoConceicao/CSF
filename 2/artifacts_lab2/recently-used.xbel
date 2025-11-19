@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xbel version="1.0"
+      xmlns:bookmark="http://www.freedesktop.org/standards/desktop-bookmarks"
+      xmlns:mime="http://www.freedesktop.org/standards/shared-mime-info"
+>
+  <bookmark href="file:///home/johhnymusk/Passwords.kdbx" added="2025-09-21T20:31:49.509248Z" modified="2025-09-21T20:31:49.509262Z" visited="2025-09-21T20:31:49.509249Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/x-keepass2"/>
+        <bookmark:applications>
+          <bookmark:application name="keepassxc" exec="&apos;keepassxc %u&apos;" modified="2025-09-21T20:31:49.509260Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/johhnymusk/Documents/ZYRA/resources/FinancialReport.pdf" added="2025-09-23T00:34:52.935690Z" modified="2025-09-23T00:34:52.935784Z" visited="2025-09-23T00:34:52.935691Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/pdf"/>
+        <bookmark:applications>
+          <bookmark:application name="Document Viewer" exec="&apos;evince %u&apos;" modified="2025-09-23T00:34:52.935780Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/johhnymusk/Documents/ZYRA/resources/Invoice.pdf" added="2025-09-23T00:35:43.566807Z" modified="2025-09-23T00:35:43.566810Z" visited="2025-09-23T00:35:43.566808Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/pdf"/>
+        <bookmark:applications>
+          <bookmark:application name="Document Viewer" exec="&apos;evince %u&apos;" modified="2025-09-23T00:35:43.566809Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/johhnymusk/Documents/ZYRA/resources/TouristThreads.png" added="2025-09-23T00:37:37.272116Z" modified="2025-09-23T00:37:37.272120Z" visited="2025-09-23T00:37:37.272117Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/png"/>
+        <bookmark:groups>
+          <bookmark:group>Graphics</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="Image Viewer" exec="&apos;eog %u&apos;" modified="2025-09-23T00:37:37.272118Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/johhnymusk/Documents/ZYRA/resources/wpp.png" added="2025-09-23T00:39:07.533409Z" modified="2025-09-23T00:39:07.533412Z" visited="2025-09-23T00:39:07.533410Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/png"/>
+        <bookmark:groups>
+          <bookmark:group>Graphics</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="Image Viewer" exec="&apos;eog %u&apos;" modified="2025-09-23T00:39:07.533411Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+</xbel>
